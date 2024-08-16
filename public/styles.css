@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4a76a8, #6dd5fa, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat Section Styling */
+.chat-section {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Brand Section (You can add your logo here) */
+.brand {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a76a8;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.brand img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Title Styling */
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Message Area Styling */
+.msg-area {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    position: relative;
+}
+
+.incoming {
+    background-color:  #4ae294;
+    color: white;
+    align-self: flex-start;
+}
+
+.outgoing {
+    background-color:#57a5dd ;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Timestamp Styling */
+.timestamp {
+    font-size: 12px;
+    color: #333333;
+    margin-top: 5px;
+    align-self: flex-end;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    border-top: 1px solid #eaeaea;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    background-color: #f7f7f7;
+    color: #333;
+    border-radius: 0 0 15px 15px;
+}
+
+textarea::placeholder {
+    color: #999;
+}
+
+textarea:focus {
+    border-color: #4a76a8;
+    background-color: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
